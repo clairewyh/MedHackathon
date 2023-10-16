@@ -64,3 +64,41 @@ h1 {
   font-size: 18px;
   font-family: 'Trebuchet MS';
 }
+
+.spinner {
+  border: 6px solid rgba(255, 255, 255, 0.3);
+  border-top: 6px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+/* Additional styles for the diagnosis text if needed */
+.diagnosis-box p {
+  
+  font-size: 14px; /* Adjust the font size */
+  color: #333; /* Set the text color */
+  font-family: "Lucida Console", "Courier New", monospace;
+  margin-top: 20px; /* Add top margin for spacing */
+  background-color: #616161; /* Set the background color */
+  color: #fff; /* Set the text color */
+  border-radius: 8px; /* Add rounded corners */
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc; /* Add a border */
+  border-radius: 4px;
+  display: flex;
+  
+  text-align: center;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  text-align: center; /* Center text horizontally */
+
+}
